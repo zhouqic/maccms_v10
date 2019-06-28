@@ -569,6 +569,7 @@ var MAC={
             if($('.mac_user').length >0){
                 $('body').on('click', '.mac_user', function(e){
                     MAC.User.Login();
+                    return false;
                 });
 
                 $('.mac_user').hover(function(e){
