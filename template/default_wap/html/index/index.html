@@ -15,7 +15,7 @@
 <body>
 {include file="public/head"}
 <header class="g_header">
-    <h1 class="s_l g_logo"><a href="{$maccms.path}"><img src="{$maccms.site_logo|mac_url_img}"></a></h1>
+    <!-- <h1 class="s_l g_logo"><a href="{$maccms.path}"><img src="{$maccms.site_logo|mac_url_img}"></a></h1> -->
     <label for="navSwitch" href="javascript:;" class="s_c mac_user"><i class="i_user"><span></span></i></label>
     <label for="navSwitch" href="javascript:;" class="s_r s_bt"><i class="i_bread"><span></span></i></label>
 </header>
@@ -137,7 +137,6 @@
 <div id="link" class="block">
     <div id="title">友情链接 LINK</div>
     <ul>
-        <li><a href="http://www.maccms.com" target="_blank">苹果CMS</a></li>
         {maccms:link num="10" order="desc" by="id"}
         <li><a href="{$vo.link_url}" target="_blank">{$vo.link_name}</a></li>
         {/maccms:link}
