@@ -46,7 +46,7 @@ var stui = {
 			})
 		},
 		slide: function() {
-			$.getScript(maccms.path+"/template/helen_ten/js/flickity.pkgd.min.js", function() {
+			$.getScript(maccms.path+"/template/mac_tencentwap/js/flickity.pkgd.min.js", function() {
 				$(".type-slide").each(function(a) {
 					$index = $(this).find('.active').index()*1;
 					if($index > 3){
@@ -78,7 +78,7 @@ var stui = {
 	flickity: {
 		carousel: function() {
 
-			$.getScript(maccms.path+"/template/helen_ten/js/flickity.pkgd.min.js", function() {
+			$.getScript(maccms.path+"/template/mac_tencentwap/js/flickity.pkgd.min.js", function() {
 				$('.carousel_default').flickity({
 				  	cellAlign: 'left',
 				  	contain: true,
@@ -110,7 +110,7 @@ var stui = {
 	},
 	images: {
 		lazyload: function() {
-			$.getScript(maccms.path+"/template/helen_ten/js/jquery.lazyload.js", function() {
+			$.getScript(maccms.path+"/template/mac_tencentwap/js/jquery.lazyload.js", function() {
 				$(".lazyload").lazyload({
 					effect: "fadeIn",
 					threshold: 200,
@@ -125,7 +125,7 @@ var stui = {
 	},
 	common: {
 		bootstrap: function() {
-			$.getScript(maccms.path+"/template/helen_ten/js/bootstrap.min.js", function() {
+			$.getScript(maccms.path+"/template/mac_tencentwap/js/bootstrap.min.js", function() {
 				$('a[data-toggle="tab"]').on("shown.bs.tab", function(a) {
 					var b = $(a.target).text();
 					$(a.relatedTarget).text();
@@ -134,7 +134,7 @@ var stui = {
 			})
 		},
 		headroom: function() {
-			$.getScript(maccms.path+"/template/helen_ten/js/headroom.min.js", function() {
+			$.getScript(maccms.path+"/template/mac_tencentwap/js/headroom.min.js", function() {
 				$("#header-top", function() {
 					(new Headroom(document.querySelector("#header-top"), {
 						tolerance: 5,
